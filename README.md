@@ -103,7 +103,7 @@ src/
 
 ## 👩‍💻 Desenvolvido para
 
-**Nara Guiã — Moda e Estilo**  
+**Nara Guia — Moda e Estilo**  
 Desafio de desenvolvimento frontend — 4 Sprints
 
 ---
