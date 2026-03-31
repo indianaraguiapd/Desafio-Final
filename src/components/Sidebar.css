@@ -1,0 +1,98 @@
+.sidebar {
+  width: 210px;
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+  align-self: flex-start;
+}
+
+.sidebar__label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--white-dim);
+  transition: color 0.25s, background 0.25s, padding-left 0.25s;
+  border-left: 2px solid transparent;
+}
+
+.sidebar__item:hover {
+  color: var(--gold-light);
+  background: rgba(201,168,76,0.05);
+  padding-left: 1.1rem;
+}
+
+.sidebar__item--active {
+  color: var(--gold);
+  border-left-color: var(--gold);
+  background: rgba(201,168,76,0.07);
+}
+
+.sidebar__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+  flex-shrink: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.sidebar__item--active .sidebar__dot {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+@media (max-width: 860px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .sidebar__label { display: none; }
+  .sidebar__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .sidebar__item {
+    border-left: none;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.9rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: border-color 0.25s, color 0.25s, background 0.25s;
+  }
+  .sidebar__item:hover { padding-left: 0.9rem; border-color: var(--gold-dim); }
+  .sidebar__item--active { border-color: var(--gold); }
+  .sidebar__dot { display: none; }
+}
