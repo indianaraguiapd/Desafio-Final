@@ -1,37 +1,7 @@
-# Nara Guiã — Moda e Estilo 🖤✨
+# Nara Guia — Moda e Estilo 🖤✨
 
 E-commerce moderno desenvolvido com **React + Vite**, consumindo a [Fake Store API](https://fakestoreapi.com/docs). Projeto de estudo cobrindo 4 sprints completas de desenvolvimento frontend.
 
----
-
-## 🚀 Como rodar o projeto
-
-### Pré-requisitos
-- Node.js 18+ instalado
-- npm ou yarn
-
-### Instalação
-
-```bash
-# Clone o repositório
-git clone <seu-repo>
-cd nara-guia
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse: **http://localhost:5173**
-
-### Build para produção
-
-```bash
-npm run build
-npm run preview
-```
 
 ---
 
